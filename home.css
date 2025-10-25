@@ -1,0 +1,255 @@
+body {
+  background-color: #81b9cb;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  display: flex;  
+  align-items: center;
+  gap: 20px;
+  padding: 20px; 
+}
+
+.right-img {
+  width: 180px;
+  height: auto;
+  margin-left: 25px;
+  border-radius: 110px;
+  transition: transform 0.7s ease, color 0.7s ease;
+}
+
+.right-img:hover {
+  transform: scale(1.1);    
+  cursor: pointer;        
+  box-shadow: 0 0 10px #a1b6d6, 0 0 40px #488ffa;
+}
+
+.motto {
+  margin-top: 15px;
+  font-size: 14px;
+  font-style: italic;
+  color: #3b3a3a;
+}
+
+.nameMotto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px; 
+}
+
+.name {
+  font-family: 'Alice', sans-serif;
+  margin: 0;
+  margin-left: 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.top-navigation {
+  position: absolute;
+  top: 50px;
+  right: 60px;
+}
+
+.navigation {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 25px;
+  color: #272727;
+  font-weight: 300;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navigation:hover {
+  transform: scale(1.1);    
+  cursor: pointer;
+  text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;
+  color: #272727;
+}
+
+h2 {
+  margin-left: 50px;
+}
+
+h3 {
+  margin-left: 40px;
+}
+
+.details {
+  font-weight: normal;
+  margin-left: 240px;
+}
+
+h4 {
+  font-size: 25px;
+  margin-left: 100px;
+  font-weight: normal;
+}
+
+.educbg {
+  font-family: 'Yatra One', system-ui;
+  margin-left: 51px;
+}
+
+button {
+  font-family: 'Merienda', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0);
+  border: 2px solid #5aa7c0;
+  border-radius: 100px;
+  transition: transform 0.7s ease, color 0.7s ease;
+    
+  box-shadow:
+    0 3px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+  
+button:hover {
+  background-image: linear-gradient(to bottom right, #81b9cb, #bfe5f7, #81b9cb); 
+  transform: scale(1.08);    
+  cursor: pointer;  
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+
+}
+
+.info-container {
+  display: flex;
+  gap: 1px;
+  padding: 15px;
+  margin-left: 5px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column p {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.skills {
+  margin-bottom: 40px;
+}
+
+.skills_a {
+  display: flex;
+  gap: 45px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 60px;
+  margin-left: 70px;
+}
+
+.skills_b {
+  flex: 1;
+  min-width: 120px;
+  max-width: 200px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgb(65, 141, 254);
+  border: 2px solid rgba(36, 36, 36, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.objective {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.obj {
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.obj_a {
+  margin-right: 90px;
+  margin-left: 110px;
+}
+
+.obj_b {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgb(65, 141, 254);
+  border: 2px solid rgba(36, 36, 36, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.label {
+  display: inline-block;
+  width: 120px; 
+}
+
+.hobbies {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.hobby-image {
+  flex: 1;
+  min-width: 190px;
+  max-width: 250px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgb(65, 141, 254);
+  border: 2px solid rgba(59, 59, 59, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hobby-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.hobby-image img:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
+  cursor: pointer; 
+}
+
+.hobby-image p {
+  margin: 0;
+  font-weight: bold;
+}
