@@ -174,3 +174,7 @@ button a {
 .bullet {
   margin-left: 60px;
 }
+
+.copyright {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

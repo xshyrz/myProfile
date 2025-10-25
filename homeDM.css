@@ -258,3 +258,7 @@ button a {
   font-weight: bold;
   color: #f0f0f0;
 }
+
+.copyright {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

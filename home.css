@@ -253,3 +253,7 @@ button a {
   margin: 0;
   font-weight: bold;
 }
+
+.copyright {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
