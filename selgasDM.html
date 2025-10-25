@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Online font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Alice&family=Raleway&family=Concert+One&family=Kaushan+Script&family=Open+Sans&family=Merienda:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+
+ <style>
+/* Dark Mode */
+body {
+  background-color: #1f1e1e;
+  font-family: 'Raleway', sans-serif;
+  color: #f0f0f0;
+}
+
+.container {
+  display: flex;  
+  align-items: center;
+  gap: 20px;
+  padding: 20px; 
+}
+
+.right-img {
+  width: 180px;
+  height: auto;
+  margin-left: 25px;
+  border-radius: 110px;
+  transition: transform 0.7s ease, color 0.7s ease;
+}
+
+.right-img:hover {
+  transform: scale(1.1);    
+  cursor: pointer;        
+  box-shadow: 0 0 10px #4a5b6e, 0 0 40px #aedddd;
+}
+
+/* Dark Mode */
+.motto {
+  margin-top: 15px;
+  font-size: 14px;
+  font-style: italic;
+  color: #c4c4c4;
+}
+
+.nameMotto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px; 
+}
+
+.name {
+  font-family: 'Alice', sans-serif;
+  margin: 0;
+  margin-left: 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.top-nav {
+  position: absolute;
+  top: 50px;
+  right: 60px;
+}
+
+.top-nav-educbg {
+  position: absolute;
+  top: 50px;
+  right: 60px;
+}
+
+.aboutContact {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 25px;
+  color: #f0f0f0;
+  font-weight: 300;
+  display: inline-block;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.aboutContact:hover {
+  transform: scale(1.1);    
+  cursor: pointer;
+  text-shadow: 0 0 20px rgb(121, 174, 253);  
+}
+
+h2 {
+  margin-left: 50px;
+}
+
+h3 {
+  margin-left: 40px;
+}
+
+.details {
+  font-weight: normal;
+  margin-left: 240px;
+}
+
+h4 {
+  font-size: 25px;
+  margin-left: 100px;
+  font-weight: normal;
+}
+
+.educbg {
+  font-family: 'Yatra One', system-ui;
+  margin-left: 51px;
+}
+
+button {
+  font-family: 'Merienda', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  background: #1d1e1e;
+  border: 2px solid #66627f4f;
+  border-radius: 100px;
+  transition: transform 0.7s ease, color 0.7s ease;
+    
+  box-shadow:
+    0 3px 2.2px rgba(166, 177, 247, 0.034),
+    0 6.7px 5.3px rgba(148, 158, 239, 0.034),
+    0 12.5px 10px rgba(128, 145, 253, 0.034),
+    0 22.3px 17.9px rgba(166, 177, 247, 0.034),
+    0 41.8px 33.4px rgba(166, 177, 247, 0.034),
+    0 100px 80px rgba(121, 130, 190, 0.034);
+}
+  
+button:hover {
+  background-image: radial-gradient(circle, #0d0e0e 0%, #151516 40%, #83a9e2 200%); 
+  transform: scale(1.08);    
+  cursor: pointer;  
+}
+
+button a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 600;
+
+}
+
+.info-container {
+  display: flex;
+  gap: 1px;
+  padding: 15px;
+  margin-left: 5px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column p {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.skills {
+  margin-bottom: 40px;
+}
+
+.skills_a {
+  display: flex;
+  gap: 45px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 60px;
+  margin-left: 70px;
+}
+
+.skills_b {
+  flex: 1;
+  min-width: 120px;
+  max-width: 200px;
+  height: auto;
+  background-color: #3b3a3a6e;
+  box-shadow: 0 0 20px rgb(131, 169, 226);
+  border: 2px solid #0000004f;
+  color: #f0f0f0;
+  border-radius: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.objective {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.obj {
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.obj_a {
+  margin-right: 90px;
+  margin-left: 110px;
+}
+
+.obj_b {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  background-color: #3b3a3a6e;
+  box-shadow: 0 0 20px rgb(131, 169, 226);
+  border: 2px solid #0000004f;
+  color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.label {
+  display: inline-block;
+  width: 120px; 
+}
+
+
+.hobbies {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.hobby-image {
+  flex: 1;
+  min-width: 190px;
+  max-width: 250px;
+  height: auto;
+  background-color: #3b3a3a6e;
+  box-shadow: 0 0 20px rgb(131, 169, 226);
+  border: 2px solid #0000004f;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hobby-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.hobby-image img:hover {
+  transform: rotateY(360deg);
+  transition: 2s;
+  cursor: pointer; 
+}
+
+.hobby-image p {
+  margin: 0;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+</style>
+</head>
+
+<body>
+    <br>
+<div class="container">
+    <img src="mypic.jpg.jpg" alt="My picture" class="right-img">
+
+    <div class="nameMotto">
+       <p class="name">SELGAS, SHAINEY ROSE &nbsp;&nbsp;J.</p>
+       <p class="motto">"Remember WHY you started. Soon, you'll SHINE when it's YOUR time."</p>
+    </div>
+
+    <div class="top-nav">
+      <a href="selgasDM.html" class="aboutContact">Home</a>
+      <a href="aboutDM.html" class="aboutContact">About</a>
+      <a href="contactDM.html" class="aboutContact">Contact</a>
+      <a href="selgas.html" class="aboutContact" onclick="darkMode()">Light</a>
+    </div>
+</div>
+
+<hr style="border: 2px solid rgb(163, 161, 161); margin-left: 50px; margin-right: 40px;">
+
+<br><br><h2><i>OBJECTIVE</i></h2>
+
+<div class="obj">
+  <div class="obj_a">
+    <div class="obj_b">
+        <p class="objective">To enhance my knowledge and skills in a gainful workplace, I offer my responsibility 
+        and service to be able to be a professional worker someday, throughout the duration of my immersion period.</p>
+    </div>
+  </div>
+</div> 
+
+    <h2><br><i>PERSONAL INFORMATION</i></h2>
+<div class="obj">
+  <div class="obj_a">
+    <div class="obj_b">
+      <div class="info-container">
+        <div class="column">
+           <p><span class="label">Nickname</span> : Shai</p>
+           <p><span class="label">Nationality</span> : Filipino</p>
+           <p><span class="label">Age</span> : 19</p>
+           <p><span class="label">Religion</span> : Catholic</p>
+           <p><span class="label">Gender</span> : F</p>
+           <p><span class="label">Height</span> : 4'11</p>
+        </div>
+
+        <div class="column">
+          <p><span class="label">Gmail</span> : shaineyroseselgas@gmail.com</p>
+          <p><span class="label">Contact</span> : 09150312366</p>
+          <p><span class="label">Birthdate</span> : March 24, 2006</p>
+          <p><span class="label">Weight</span> : 48kg</p>
+          <p><span class="label">Civil Status</span> : Single</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+    <h2><br><i>SKILLS</i></h2>
+<div class="skills">
+  <div class="skills_a">
+    <div class="skills_b">
+        <p>Time Management</p>
+    </div>
+    <div class="skills_b">
+        <p>Cooperation</p>
+    </div>
+    <div class="skills_b">
+        <p>Teamwork</p>
+    </div>
+    <div class="skills_b">
+        <p>Responsibility</p>
+    </div>
+   </div>
+ </div>
+</div>
+
+<br>
+
+    <h2><i>HOBBIES</i></h2>
+<div class="section">
+    <div class="hobbies">
+      <div class="hobby-image">
+        <img src="dancing.jpg" alt="Dancing">
+        <p>Dancing</p>
+      </div>
+      <div class="hobby-image">
+        <img src="reading.jpg" alt="Reading">
+        <p>Reading</p>
+      </div>
+      <div class="hobby-image">
+        <img src="watch.jpg" alt="Watching">
+        <p>Watching Movies</p>
+      </div>
+      <div class="hobby-image">
+        <img src="travel.webp" alt="Travel">
+        <p>Travel</p>
+      </div>
+    </div>
+  </div>
+
+    <br><br><br>
+
+    <center>
+    <button class="button">
+      <a href="educBgDM.html">&nbsp;Educational Background&nbsp;</a></button>
+   </center>
+    <br><br>
+
+</body>
+</html>
