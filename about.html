@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Online font, raleway and Lora-->
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Alice&family=Raleway&family=Concert+One&family=Kaushan+Script&family=Yatra+One&family=Open+Sans&family=Merienda:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>About</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <title>About</title>
+
     <link rel="stylesheet" href="about.css">
+
 </head>
 
 <body>
@@ -18,10 +22,11 @@
       <a href="home.html" class="navigation">Home</a>
       <a href="about.html" class="navigation">About</a>
       <a href="contact.html" class="navigation">Contact</a>
-      <a href="aboutDM.html" class="navigation">Dark</a>
+      <button id="themeToggle" class="switchmode">
+      <i id="themeIcon" class="bi bi-moon-fill"></i></button>
     </div>
 
-    <hr style="border: 2px solid rgb(38, 37, 37); margin-left: 50px; margin-right: 40px;">
+    <hr class="hr-upper">
 
     <br><br><br>
     <div class="obj">
@@ -51,9 +56,11 @@
   <br><br><br>
 
     <center>
-      <hr style="border: 1px solid rgb(158, 197, 245);">
+      <hr class="hr-lower">
       <p class="copyright">&copy; 2025 shayni</p>
     </center>
+
+    <script src="myjs.js"></script>
 
 </body>
 </html>

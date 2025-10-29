@@ -7,6 +7,12 @@ body {
   margin-left: 50px;
 }
 
+.hr-upper {
+  border: 2px solid rgb(38, 37, 37); 
+  margin-left: 50px; 
+  margin-right: 40px;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -137,7 +143,7 @@ body {
   margin-left: 220px;
 }
 
-button {
+.personalButton {
   font-family: 'Merienda', sans-serif;
   font-size: 20px;
   padding: 10px;
@@ -155,13 +161,13 @@ button {
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-button:hover {
+.personalButton:hover {
   background-image: linear-gradient(to bottom right, #81b9cb, #bfe5f7, #81b9cb);
   transform: scale(1.08);    
   cursor: pointer;    
 }
 
-button a {
+.personalButton a {
   text-decoration: none;
   color: black;
   font-weight: 600;
@@ -177,4 +183,159 @@ button a {
 
 .copyright {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.switchmode {
+  margin-left: 25px;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  cursor: pointer;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.switchmode:hover {
+  transform: scale(1.1);    
+  cursor: pointer;
+  text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;
+}
+
+.hr-lower {
+  border: 1px solid rgb(158, 197, 245)
+}
+
+
+/* Dark Mode */
+.dark {
+  background-image: linear-gradient(#1f1e1e);
+  font-family: 'Raleway', sans-serif;
+  color: #f0f0f0;
+}
+
+.dark .hr-upper {
+  border: 2px solid rgb(163, 161, 161); 
+  margin-left: 50px; 
+  margin-right: 40px;
+}
+
+.dark .navigation {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 25px;
+  color: #f0f0f0;
+  font-weight: 300;
+  display: inline-block;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.dark .navigation:hover {
+  transform: scale(1.1);    
+  cursor: pointer;     
+  text-shadow: 0 0 20px rgb(121, 174, 253);   
+}
+
+.dark .tertiary {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  background-color: #3b3a3a6e;
+  box-shadow: 0 0 20px rgb(131, 169, 226);
+  border: 2px solid #0000004f;
+  color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.dark .secondary {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  background-color: #3b3a3a6e;
+  box-shadow: 0 0 20px rgb(131, 169, 226);
+  border: 2px solid #0000004f;
+  color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.dark .primary {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  background-color: #3b3a3a6e;
+  box-shadow: 0 0 20px rgb(131, 169, 226);
+  border: 2px solid #0000004f;
+  color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.dark .proj_b {
+  flex: 1;
+  min-width: 120px;
+  max-width: 400px;
+  height: auto;
+  background-color: #3b3a3a6e;
+  box-shadow: 0 0 20px rgb(131, 169, 226);
+  border: 2px solid #0000004f;
+  color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.dark .personalButton {
+  font-family: 'Merienda', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  background: #1d1e1e;
+  border: 2px solid #66627f4f;
+  border-radius: 100px;
+  transition: transform 0.7s ease, color 0.7s ease;
+    
+  box-shadow:
+    0 3px 2.2px rgba(166, 177, 247, 0.034),
+    0 6.7px 5.3px rgba(148, 158, 239, 0.034),
+    0 12.5px 10px rgba(128, 145, 253, 0.034),
+    0 22.3px 17.9px rgba(166, 177, 247, 0.034),
+    0 41.8px 33.4px rgba(166, 177, 247, 0.034),
+    0 100px 80px rgba(121, 130, 190, 0.034);
+}
+
+.dark .personalButton:hover {
+  background-image: radial-gradient(circle, #0d0e0e 0%, #151516 40%, #83a9e2 200%); 
+  transform: scale(1.08);    
+  cursor: pointer;  
+}
+
+.dark .personalButton a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
+.dark .switchmode {
+  margin-left: 25px;
+  border: none;
+  color: #f0f0f0;
+  background-color: transparent;
+  font-size: 25px;
+  cursor: pointer;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.dark .hr-lower {
+  border: 1px solid rgb(39, 39, 40);
 }
