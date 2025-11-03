@@ -167,7 +167,7 @@ h4 {
 
 .column p {
   margin: 5px 0;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .section {
@@ -198,15 +198,16 @@ h4 {
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
-  padding: 10px;
+  padding: 3px;
   color: #000000;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   font-family: 'Raleway', sans-serif;
 }
 
 .objective {
-  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 17px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -218,7 +219,7 @@ h4 {
 
 .obj_a {
   margin-right: 90px;
-  margin-left: 110px;
+  margin-left: 90px;
 }
 
 .obj_b {
@@ -238,6 +239,8 @@ h4 {
 .label {
   display: inline-block;
   width: 120px; 
+  font-size: 17px;
+  line-height: 1.5;
 }
 
 .hobbies {
@@ -281,7 +284,6 @@ h4 {
 
 .hobby-image p {
   margin: 0;
-  font-weight: bold;
 }
 
 .copyright {
@@ -414,9 +416,8 @@ h4 {
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 20px;
+  padding: 3px;
+  font-size: 17px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -425,7 +426,7 @@ h4 {
   width: 100%;
   height: auto;
   background-color: #3b3a3a6e;
-  box-shadow: 0 0 20px rgb(131, 169, 226);
+  box-shadow: 0 0 20px rgb(131, 169, 226);;
   border: 2px solid #0000004f;
   color: #f0f0f0;
   border-radius: 8px;
@@ -452,7 +453,6 @@ h4 {
 
 .dark .hobby-image p {
   margin: 0;
-  font-weight: bold;
   color: #f0f0f0;
 }
 
