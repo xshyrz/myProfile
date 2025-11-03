@@ -6,40 +6,54 @@ body {
 .contact {
   font-family: 'Yatra One', sans-serif;
   margin-left: 51px;
+  font-size: 25px;
+  margin-top: 60px;
 }
 
-.hr-upper {
-  border: 2px solid rgb(38, 37, 37); 
-  margin-left: 50px; 
-  margin-right: 40px;
-}
-
-.top-nav {
-  position: absolute;
-  top: 60px;
-  right: 60px;
+.sticker {
+  height: 50px;
+  width: 50px;
 }
 
 .top-navigation {
-  position: absolute;
-  top: 20px;
-  right: 40px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #8ccbe4, #bce5f2, #8ccbe4);
+}
+
+.myProfile {
+  font-size: 24px;
+  font-family: 'Merienda',sans-serif;
+  margin: 0;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
 }
 
 .navigation {
   font-family: 'Concert One', sans-serif;
   text-decoration: none;
-  margin-left: 13px;
+  margin-left: 26px;
   font-size: 20px;
   color: #272727;
   font-weight: 300;
-  display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .navigation:hover {
-  transform: scale(1.1);   
-  cursor: pointer;        
+  transform: scale(1.1);    
+  cursor: pointer;
   text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;
   color: #272727;
 }
@@ -106,7 +120,7 @@ body {
 }
 
 .switchmode {
-  margin-left: 13px;
+  margin-left: 26px;
   border: none;
   background-color: transparent;
   font-size: 18px;
@@ -133,33 +147,40 @@ body {
   color: #f0f0f0;
 }
 
-.dark .hr-upper {
-  border: 2px solid rgb(163, 161, 161); 
-  margin-left: 50px; 
-  margin-right: 40px;
+.dark .sticker {
+  height: 50px;
+  width: 50px;
 }
 
 .dark .top-navigation {
-  position: absolute;
-  top: 20px;
-  right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #1f1e1e, #6f6d6d, #1f1e1e);
+}
+
+.dark .myProfile {
+  font-size: 24px;
+  font-family: 'Merienda',sans-serif;
+  color: #f0f0f0;
+  margin: 0;
 }
 
 .dark .navigation {
   font-family: 'Concert One', sans-serif;
   text-decoration: none;
-  margin-left: 13px;
+  margin-left: 26px;
   font-size: 20px;
   color: #f0f0f0;
   font-weight: 300;
-  display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .dark .navigation:hover {
   transform: scale(1.1);    
   cursor: pointer;     
-  text-shadow: 0 0 20px rgb(121, 174, 253);   
+  text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;   
 }
 
 .dark .socMed-image {
@@ -191,7 +212,7 @@ body {
 }
 
 .dark .switchmode {
-  margin-left: 13px;
+  margin-left: 26px;
   border: none;
   color: #f0f0f0;
   background-color: transparent;
