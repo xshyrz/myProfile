@@ -147,11 +147,6 @@ body {
   color: #f0f0f0;
 }
 
-.dark .sticker {
-  height: 50px;
-  width: 50px;
-}
-
 .dark .top-navigation {
   display: flex;
   justify-content: space-between;

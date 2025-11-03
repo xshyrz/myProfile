@@ -7,12 +7,6 @@ body {
   margin-left: 50px;
 }
 
-.hr-upper {
-  border: 2px solid rgb(38, 37, 37); 
-  margin-left: 50px; 
-  margin-right: 40px;
-}
-
 .profile-row {
   display: flex;
   align-items: center;
@@ -230,17 +224,6 @@ body {
   background-image: linear-gradient(#1f1e1e);
   font-family: 'Raleway', sans-serif;
   color: #f0f0f0;
-}
-
-.dark .hr-upper {
-  border: 2px solid rgb(163, 161, 161); 
-  margin-left: 50px; 
-  margin-right: 40px;
-}
-
-.dark .sticker {
-  height: 50px;
-  width: 50px;
 }
 
 .dark .top-navigation {
