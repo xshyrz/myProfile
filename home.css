@@ -3,6 +3,11 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+h2 {
+  font-family: 'Concert One', sans-serif;
+  color: #222121;
+}
+
 .right-img {
   width: 180px;
   height: auto;
@@ -180,34 +185,72 @@ h4 {
 
 .skills_a {
   display: flex;
-  gap: 45px;
+  gap: 35px;
   flex-wrap: wrap;
   justify-content: center;
   margin-right: 60px;
   margin-left: 70px;
 }
 
-.skills_b {
-  flex: 1;
-  min-width: 120px;
-  max-width: 200px;
+.skill-A, .skill-B, .skill-C, .skill-D {
+  font-family: 'Raleway', sans-serif;
+  width: 160px;
   height: auto;
+  position: relative;
+  display: inline-block;
+  color: #000000;
+  padding: 15px 15px 15px 15px;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 20px rgb(65, 141, 254);
   border: 2px solid rgba(36, 36, 36, 0.3);
   border-radius: 8px;
-  overflow: hidden;
   text-align: center;
-  padding: 3px;
-  color: #000000;
-  font-size: 17px;
-  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Default text */
+.skill-A .default-text, .skill-B .default-text,
+.skill-C .default-text, .skill-D .default-text {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+/* Hover text (hidden at first) */
+.skill-A .hover-text, .skill-B .hover-text,
+.skill-C .hover-text, .skill-D .hover-text {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  cursor: help;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Hover effect 
+.skill-A:hover, .skill-B:hover,
+.skill-C:hover, .skill-D:hover {           
+  transform: scale(1.05);  
+} */
+
+.skill-A:hover .default-text, .skill-B:hover .default-text,
+.skill-C:hover .default-text, .skill-D:hover .default-text {
+  opacity: 0;               /* fade out */
+}
+
+.skill-A:hover .hover-text, .skill-B:hover .hover-text,
+.skill-C:hover .hover-text, .skill-D:hover .hover-text {
+  opacity: 1;               /* fade in */
 }
 
 .objective {
   text-align: justify;
   line-height: 1.5;
-  font-size: 17px;
+  font-size: 15px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -239,7 +282,7 @@ h4 {
 .label {
   display: inline-block;
   width: 120px; 
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -279,7 +322,7 @@ h4 {
 .hobby-image img:hover {
   transform: rotateY(360deg);
   transition: 2s;
-  cursor: pointer; 
+  cursor: copy; 
 }
 
 .hobby-image p {
@@ -316,6 +359,11 @@ h4 {
   background-image: linear-gradient(#1f1e1e);
   font-family: 'Raleway', sans-serif;
   color: #f0f0f0;
+}
+
+.dark h2 {
+  font-family: 'Concert One', sans-serif;
+  color: #e1dada;
 }
 
 .dark .hr-upper {
@@ -403,22 +451,23 @@ h4 {
   font-weight: 600;
 }
 
-.dark .skills_b {
-  flex: 1;
-  min-width: 120px;
-  max-width: 200px;
+.dark .skill-A, .dark .skill-B, .dark .skill-C, .dark .skill-D {
+  font-family: 'Raleway', sans-serif;
+  width: 160px;
   height: auto;
+  position: relative;
+  display: inline-block;
+  color: #f0f0f0;
+  padding: 15px 15px 15px 15px;
   background-color: #3b3a3a6e;
   box-shadow: 0 0 20px rgb(131, 169, 226);
   border: 2px solid #0000004f;
-  color: #f0f0f0;
-  border-radius: 8px;
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
-  padding: 3px;
-  font-size: 17px;
-  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .dark .obj_b {
