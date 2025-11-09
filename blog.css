@@ -90,7 +90,7 @@ h3 {
 .group-photo, .grad-photo {
   width: 250px;
   height: 200px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .group-photo, .grad-photo:hover {
