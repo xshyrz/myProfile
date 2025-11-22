@@ -73,9 +73,18 @@ h2 {
 }
 
 .myProfile {
-  font-size: 24px;
-  font-family: 'Merienda',sans-serif;
+  font-size: 35px;
+  font-family: 'Tangerine', cursive;
   margin: 0;
+  font-weight: bold;
+}
+
+.shortIntro {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .nav-right {
@@ -100,7 +109,8 @@ h2 {
 }
 
 .navigation:hover {
-  transform: scale(1.1);    
+  transform: scale(1.1);  
+  transition: 1s;  
   cursor: pointer;
   text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;
   color: #272727;
@@ -126,7 +136,7 @@ h4 {
 }
 
 .educButton {
-  font-family: 'Merienda', sans-serif;
+  font-family: "Nova Round", system-ui;
   font-size: 20px;
   padding: 10px;
   background: rgba(255, 255, 255, 0);
@@ -138,13 +148,11 @@ h4 {
     0 3px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
     0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
   
 .educButton:hover {
-  background-image: linear-gradient(to bottom right, #81b9cb, #bfe5f7, #81b9cb); 
+  background-image: radial-gradient(#81b9cb, #93bbc9, #d6ebf6); 
   transform: scale(1.08);    
   cursor: pointer;  
 }
@@ -199,7 +207,7 @@ h4 {
   color: #000000;
   padding: 15px 15px 15px 15px;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgb(65, 141, 254);
+  box-shadow: 0 0 13px rgb(65, 141, 254);
   border: 2px solid rgba(36, 36, 36, 0.3);
   border-radius: 8px;
   text-align: center;
@@ -259,8 +267,8 @@ h4 {
 }
 
 .obj_a {
-  margin-right: 90px;
-  margin-left: 90px;
+  margin-right: 55px;
+  margin-left: 105px;
 }
 
 .obj_b {
@@ -268,7 +276,7 @@ h4 {
   width: 100%;
   height: auto;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgb(65, 141, 254);
+  box-shadow: 0 0 13px rgb(65, 141, 254);
   border: 2px solid rgba(36, 36, 36, 0.3);
   border-radius: 8px;
   overflow: hidden;
@@ -299,7 +307,7 @@ h4 {
   max-width: 250px;
   height: auto;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgb(65, 141, 254);
+  box-shadow: 0 0 13px rgb(65, 141, 254);
   border: 2px solid rgba(59, 59, 59, 0.3);
   border-radius: 8px;
   overflow: hidden;
@@ -307,6 +315,12 @@ h4 {
   padding: 10px;
   color: #000000;
   font-family: 'Raleway', sans-serif;
+}
+
+.hobby-image:hover {
+  transform: scale(1.1);
+  transition: 2s;
+  cursor: copy; 
 }
 
 .hobby-image img {
@@ -317,12 +331,6 @@ h4 {
   margin-bottom: 8px;
 }
 
-.hobby-image img:hover {
-  transform: rotateY(360deg);
-  transition: 2s;
-  cursor: copy; 
-}
-
 .hobby-image p {
   margin: 0;
   font-size: 15px;
@@ -330,6 +338,11 @@ h4 {
 
 .copyright {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 3px;
 }
 
 .switchmode {
@@ -349,6 +362,11 @@ h4 {
 
 .hr-lower {
   border: 1px solid rgb(158, 197, 245)
+}
+
+.footerIcon {
+  height: 40px;
+  width: 40px;
 }
 
 
@@ -398,10 +416,11 @@ h4 {
 }
 
 .dark .myProfile {
-  font-size: 24px;
-  font-family: 'Merienda',sans-serif;
-  color: #f0f0f0;
+  font-size: 35px;
+  font-family: 'Tangerine', cursive;
   margin: 0;
+  font-weight: bold;
+  color: #f0f0f0;
 }
 
 .dark .navigation {
@@ -415,15 +434,13 @@ h4 {
 }
 
 .dark .navigation:hover {
-  transform: scale(1.1);    
+  transform: scale(1.1);  
+  transition: 1s;    
   cursor: pointer;     
   text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;   
 }
 
 .dark .educButton {
-  font-family: 'Merienda', sans-serif;
-  font-size: 20px;
-  padding: 10px;
   background: #1d1e1e;
   border: 2px solid #66627f4f;
   border-radius: 100px;
@@ -433,13 +450,11 @@ h4 {
     0 3px 2.2px rgba(166, 177, 247, 0.034),
     0 6.7px 5.3px rgba(148, 158, 239, 0.034),
     0 12.5px 10px rgba(128, 145, 253, 0.034),
-    0 22.3px 17.9px rgba(166, 177, 247, 0.034),
-    0 41.8px 33.4px rgba(166, 177, 247, 0.034),
     0 100px 80px rgba(121, 130, 190, 0.034);
 }
   
 .dark .educButton:hover {
-  background-image: radial-gradient(circle, #0d0e0e 0%, #151516 40%, #83a9e2 200%); 
+  background-image: radial-gradient(#303030, #303030, #4e595f); 
   transform: scale(1.08);    
   cursor: pointer;  
 }
@@ -459,7 +474,7 @@ h4 {
   color: #f0f0f0;
   padding: 15px 15px 15px 15px;
   background-color: #3b3a3a6e;
-  box-shadow: 0 0 20px rgb(131, 169, 226);
+  box-shadow: 0 0 13px rgb(131, 169, 226);
   border: 2px solid #0000004f;
   border-radius: 8px;
   overflow: hidden;
@@ -474,7 +489,7 @@ h4 {
   width: 100%;
   height: auto;
   background-color: #3b3a3a6e;
-  box-shadow: 0 0 20px rgb(131, 169, 226);;
+  box-shadow: 0 0 13px rgb(131, 169, 226);;
   border: 2px solid #0000004f;
   color: #f0f0f0;
   border-radius: 8px;
@@ -489,7 +504,7 @@ h4 {
   max-width: 250px;
   height: auto;
   background-color: #3b3a3a6e;
-  box-shadow: 0 0 20px rgb(131, 169, 226);
+  box-shadow: 0 0 13px rgb(131, 169, 226);
   border: 2px solid #0000004f;
   border-radius: 8px;
   overflow: hidden;
