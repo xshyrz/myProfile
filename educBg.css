@@ -29,9 +29,10 @@ body {
 }
 
 .myProfile {
-  font-size: 24px;
-  font-family: 'Merienda',sans-serif;
+  font-size: 35px;
+  font-family: 'Tangerine', cursive;
   margin: 0;
+  font-weight: bold;
 }
 
 .nav-right {
@@ -56,7 +57,8 @@ body {
 }
 
 .navigation:hover {
-  transform: scale(1.1);    
+  transform: scale(1.1);  
+  transition: 1s;    
   cursor: pointer;
   text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;
   color: #272727;
@@ -88,7 +90,7 @@ body {
   width: 100%;
   height: auto;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgb(65, 141, 254);
+  box-shadow: 0 0 13px rgb(65, 141, 254);
   border: 2px solid rgba(36, 36, 36, 0.3);
   border-radius: 8px;
   overflow: hidden;
@@ -103,7 +105,7 @@ body {
   width: 100%;
   height: auto;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgb(65, 141, 254);
+  box-shadow: 0 0 13px rgb(65, 141, 254);
   border: 2px solid rgba(36, 36, 36, 0.3);
   border-radius: 8px;
   overflow: hidden;
@@ -118,7 +120,7 @@ body {
   width: 100%;
   height: auto;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgb(65, 141, 254);
+  box-shadow: 0 0 13px rgb(65, 141, 254);
   border: 2px solid rgba(36, 36, 36, 0.3);
   border-radius: 8px;
   overflow: hidden;
@@ -146,7 +148,7 @@ body {
   max-width: 400px;
   height: auto;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgb(65, 141, 254);
+  box-shadow: 0 0 13px rgb(65, 141, 254);
   border: 2px solid rgba(36, 36, 36, 0.3);
   border-radius: 8px;
   overflow: hidden;
@@ -178,36 +180,6 @@ body {
   margin-left: 93px;
 }
 
-.personalButton {
-  font-family: 'Merienda', sans-serif;
-  font-size: 20px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0);
-  border: 2px solid #5aa7c0;
-  border-radius: 100px;
-  transition: transform 0.7s ease, color 0.7s ease;
-    
-  box-shadow:
-    0 3px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
-}
-
-.personalButton:hover {
-  background-image: linear-gradient(to bottom right, #81b9cb, #bfe5f7, #81b9cb);
-  transform: scale(1.08);    
-  cursor: pointer;    
-}
-
-.personalButton a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-}
-
 .projects {
   font-family: 'Concert One', sans-serif;
 }
@@ -224,6 +196,11 @@ body {
 
 .copyright {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 3px;
 }
 
 .switchmode {
@@ -245,6 +222,12 @@ body {
   border: 1px solid rgb(158, 197, 245)
 }
 
+.footerIcon {
+  height: 40px;
+  width: 40px;
+}
+
+
 
 /* Dark Mode */
 .dark {
@@ -262,10 +245,11 @@ body {
 }
 
 .dark .myProfile {
-  font-size: 24px;
-  font-family: 'Merienda',sans-serif;
-  color: #f0f0f0;
+  font-size: 35px;
+  font-family: 'Tangerine', cursive;
   margin: 0;
+  font-weight: bold;
+  color: #f0f0f0;
 }
 
 .dark .navigation {
@@ -279,7 +263,8 @@ body {
 }
 
 .dark .navigation:hover {
-  transform: scale(1.1);    
+  transform: scale(1.1);  
+  transition: 1s;    
   cursor: pointer;     
   text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;   
 }
@@ -289,7 +274,7 @@ body {
   width: 100%;
   height: auto;
   background-color: #3b3a3a6e;
-  box-shadow: 0 0 20px rgb(131, 169, 226);
+  box-shadow: 0 0 13px rgb(131, 169, 226);
   border: 2px solid #0000004f;
   color: #f0f0f0;
   border-radius: 8px;
@@ -304,7 +289,7 @@ body {
   width: 100%;
   height: auto;
   background-color: #3b3a3a6e;
-  box-shadow: 0 0 20px rgb(131, 169, 226);
+  box-shadow: 0 0 13px rgb(131, 169, 226);
   border: 2px solid #0000004f;
   color: #f0f0f0;
   border-radius: 8px;
@@ -319,7 +304,7 @@ body {
   width: 100%;
   height: auto;
   background-color: #3b3a3a6e;
-  box-shadow: 0 0 20px rgb(131, 169, 226);
+  box-shadow: 0 0 13px rgb(131, 169, 226);
   border: 2px solid #0000004f;
   color: #f0f0f0;
   border-radius: 8px;
@@ -335,7 +320,7 @@ body {
   max-width: 400px;
   height: auto;
   background-color: #3b3a3a6e;
-  box-shadow: 0 0 20px rgb(131, 169, 226);
+  box-shadow: 0 0 13px rgb(131, 169, 226);
   border: 2px solid #0000004f;
   color: #f0f0f0;
   border-radius: 8px;
@@ -343,36 +328,6 @@ body {
   padding: 10px;
   font-size: 20px;
   font-family: 'Raleway', sans-serif;
-}
-
-.dark .personalButton {
-  font-family: 'Merienda', sans-serif;
-  font-size: 20px;
-  padding: 10px;
-  background: #1d1e1e;
-  border: 2px solid #66627f4f;
-  border-radius: 100px;
-  transition: transform 0.7s ease, color 0.7s ease;
-    
-  box-shadow:
-    0 3px 2.2px rgba(166, 177, 247, 0.034),
-    0 6.7px 5.3px rgba(148, 158, 239, 0.034),
-    0 12.5px 10px rgba(128, 145, 253, 0.034),
-    0 22.3px 17.9px rgba(166, 177, 247, 0.034),
-    0 41.8px 33.4px rgba(166, 177, 247, 0.034),
-    0 100px 80px rgba(121, 130, 190, 0.034);
-}
-
-.dark .personalButton:hover {
-  background-image: radial-gradient(circle, #0d0e0e 0%, #151516 40%, #83a9e2 200%); 
-  transform: scale(1.08);    
-  cursor: pointer;  
-}
-
-.dark .personalButton a {
-  text-decoration: none;
-  color: #f0f0f0;
-  font-weight: 600;
 }
 
 .dark .switchmode {
