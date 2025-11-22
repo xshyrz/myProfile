@@ -25,9 +25,10 @@ body {
 }
 
 .myProfile {
-  font-size: 24px;
-  font-family: 'Merienda',sans-serif;
+  font-size: 35px;
+  font-family: 'Tangerine', cursive;
   margin: 0;
+  font-weight: bold;
 }
 
 .nav-right {
@@ -52,7 +53,8 @@ body {
 }
 
 .navigation:hover {
-  transform: scale(1.1);    
+  transform: scale(1.1);  
+  transition: 1s;    
   cursor: pointer;
   text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;
   color: #272727;
@@ -70,7 +72,7 @@ h3 {
   margin-right: 80px;
   margin-left: 80px;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgb(65, 141, 254);
+  box-shadow: 0 0 13px rgb(65, 141, 254);
   border: 2px solid rgba(36, 36, 36, 0.3);
   border-radius: 10px;
   position: relative;
@@ -93,10 +95,10 @@ h3 {
   border-radius: 10px;
 }
 
-.group-photo, .grad-photo:hover {
-  transform: rotate(360deg);
-  transition: 2s;
-  cursor: crosshair; 
+.group-photo:hover, .grad-photo:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  cursor: copy; 
 }
 
 .desc {
@@ -156,6 +158,11 @@ h3 {
 
 .copyright {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 3px;
 }
 
 .switchmode {
@@ -177,6 +184,11 @@ h3 {
   border: 1px solid rgb(158, 197, 245)
 }
 
+.footerIcon {
+  height: 40px;
+  width: 40px;
+}
+
 
 
 /* Dark Mode */
@@ -195,10 +207,11 @@ h3 {
 }
 
 .dark .myProfile {
-  font-size: 24px;
-  font-family: 'Merienda',sans-serif;
-  color: #f0f0f0;
+  font-size: 35px;
+  font-family: 'Tangerine', cursive;
   margin: 0;
+  font-weight: bold;
+  color: #f0f0f0;
 }
 
 .dark .navigation {
@@ -212,7 +225,8 @@ h3 {
 }
 
 .dark .navigation:hover {
-  transform: scale(1.1);    
+  transform: scale(1.1);  
+  transition: 1s;    
   cursor: pointer;     
   text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;   
 }
@@ -230,7 +244,7 @@ h3 {
   margin-right: 80px;
   margin-left: 80px;
   background-color: rgba(59, 58, 58, 0.431);
-  box-shadow: 0 0 20px rgb(131, 169, 226);
+  box-shadow: 0 0 13px rgb(131, 169, 226);
   border: 2px solid rgba(0, 0, 0, 0.31);
   border-radius: 10px;
   position: relative;
