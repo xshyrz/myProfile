@@ -25,9 +25,10 @@ body {
 }
 
 .myProfile {
-  font-size: 24px;
-  font-family: 'Merienda',sans-serif;
+  font-size: 35px;
+  font-family: 'Tangerine', cursive;
   margin: 0;
+  font-weight: bold;
 }
 
 .nav-right {
@@ -52,7 +53,8 @@ body {
 }
 
 .navigation:hover {
-  transform: scale(1.1);    
+  transform: scale(1.1);  
+  transition: 1s;    
   cursor: pointer;
   text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;
   color: #272727;
@@ -72,8 +74,8 @@ body {
 
 .obj_a {
   display: flex;
-  margin-right: 90px;
-  margin-left: 110px;
+  margin-right: 80px;
+  margin-left: 130px;
 }
 
 .obj_b {
@@ -81,7 +83,7 @@ body {
   width: 100%;
   height: auto;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgb(65, 141, 254);
+  box-shadow: 0 0 13px rgb(65, 141, 254);
   border: 2px solid rgba(36, 36, 36, 0.3);
   border-radius: 10px;
   position: relative;
@@ -92,6 +94,11 @@ body {
 
 .copyright {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 3px;
 }
 
 .switchmode {
@@ -113,6 +120,10 @@ body {
   border: 1px solid rgb(158, 197, 245)
 }
 
+.footerIcon {
+  height: 40px;
+  width: 40px;
+}
 
 
 /* Dark Mode */
@@ -131,8 +142,9 @@ body {
 }
 
 .dark .myProfile {
-  font-size: 24px;
-  font-family: 'Merienda',sans-serif;
+  font-size: 35px;
+  font-family: 'Tangerine', cursive;
+  font-weight: bold;
   color: #f0f0f0;
   margin: 0;
 }
@@ -148,7 +160,8 @@ body {
 }
 
 .dark .navigation:hover {
-  transform: scale(1.1);    
+  transform: scale(1.1);  
+  transition: 1s;   
   cursor: pointer;     
   text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;   
 }
@@ -166,7 +179,7 @@ body {
   width: 100%;
   height: auto;
   background-color: #3b3a3a6e;
-  box-shadow: 0 0 20px rgb(131, 169, 226);
+  box-shadow: 0 0 13px rgb(131, 169, 226);
   border: 2px solid #0000004f;
   color: #f0f0f0;
   border-radius: 10px;
