@@ -24,6 +24,7 @@ h2 {
 
 .motto {
   margin-top: 15px;
+  margin-left: 15px;
   font-size: 14px;
   font-style: italic;
   color: #3b3a3a;
@@ -54,6 +55,7 @@ h2 {
   border: 2px solid rgb(38, 37, 37); 
   margin-left: 50px; 
   margin-right: 40px;
+  margin-top: 5px;
 }
 
 .sticker {
@@ -123,11 +125,6 @@ h4 {
   font-weight: normal;
 }
 
-.educbg {
-  font-family: 'Yatra One', system-ui;
-  margin-left: 51px;
-}
-
 .educButton {
   font-family: 'Merienda', sans-serif;
   font-size: 20px;
@@ -186,6 +183,7 @@ h4 {
 .skills_a {
   display: flex;
   gap: 35px;
+  font-size: 15px;
   flex-wrap: wrap;
   justify-content: center;
   margin-right: 60px;
@@ -327,6 +325,7 @@ h4 {
 
 .hobby-image p {
   margin: 0;
+  font-size: 15px;
 }
 
 .copyright {
@@ -502,6 +501,7 @@ h4 {
 
 .dark .hobby-image p {
   margin: 0;
+  font-size: 15px;
   color: #f0f0f0;
 }
 

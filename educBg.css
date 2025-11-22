@@ -79,6 +79,10 @@ body {
   margin-left: 150px;
 }
 
+.level {
+  font-size: 20px;
+}
+
 .tertiary {
   flex: 1;
   width: 100%;
@@ -90,7 +94,7 @@ body {
   overflow: hidden;
   color: #000000;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -105,7 +109,7 @@ body {
   overflow: hidden;
   color: #000000;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -120,7 +124,7 @@ body {
   overflow: hidden;
   color: #000000;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -154,7 +158,24 @@ body {
 
 .details {
   font-weight: normal;
+  font-size: 17px;
   margin-left: 220px;
+}
+
+.level {
+  margin-left: 20px;
+}
+
+.unbold3 {
+  margin-left: 85px;
+}
+
+.unbold2 {
+  margin-left: 60px;
+}
+
+.unbold1 {
+  margin-left: 93px;
 }
 
 .personalButton {
@@ -187,12 +208,18 @@ body {
   font-weight: 600;
 }
 
+.projects {
+  font-family: 'Concert One', sans-serif;
+}
+
 .language {
   margin-left: 30px;
+  font-size: 18px;
 }
 
 .bullet {
   margin-left: 60px;
+  font-size: 15px;
 }
 
 .copyright {
