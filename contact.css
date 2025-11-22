@@ -29,9 +29,10 @@ h2 {
 }
 
 .myProfile {
-  font-size: 24px;
-  font-family: 'Merienda',sans-serif;
+  font-size: 35px;
+  font-family: 'Tangerine', cursive;
   margin: 0;
+  font-weight: bold;
 }
 
 .nav-right {
@@ -115,9 +116,9 @@ h2 {
 
 .custom-link:hover {
   color: #0077cc; 
-  transform: scale(1.05);    
-  cursor: pointer;        
-  transition: all 0.6s ease;
+  transform: scale(1.1);  
+  transition: 1s;    
+  cursor: pointer;       
 }
 
 .copyright {
@@ -217,10 +218,10 @@ h2 {
 }
 
 .dark .custom-link:hover {
-  color: #ba6ffc; 
-  transform: scale(1.05);    
+  color: #8e8be7; 
+  transform: scale(1.1);  
+  transition: 1s;  
   cursor: pointer;        
-  transition: all 0.6s ease;
 }
 
 .dark .switchmode {
