@@ -56,7 +56,8 @@ h2 {
 }
 
 .navigation:hover {
-  transform: scale(1.1);    
+  transform: scale(1.1);  
+  transition: 1s;   
   cursor: pointer;
   text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;
   color: #272727;
@@ -81,7 +82,7 @@ h2 {
   max-width: 250px;
   height: auto;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgb(65, 141, 254);
+  box-shadow: 0 0 13px rgb(65, 141, 254);
   border: 2px solid rgba(59, 59, 59, 0.3);
   border-radius: 8px;
   overflow: hidden;
@@ -121,6 +122,11 @@ h2 {
 
 .copyright {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 3px;
 }
 
 .switchmode {
@@ -142,6 +148,11 @@ h2 {
   border: 1px solid rgb(158, 197, 245)
 }
 
+.footerIcon {
+  height: 40px;
+  width: 40px;
+}
+
 
 
 /* Dark Mode */
@@ -160,10 +171,11 @@ h2 {
 }
 
 .dark .myProfile {
-  font-size: 24px;
-  font-family: 'Merienda',sans-serif;
-  color: #f0f0f0;
+  font-size: 35px;
+  font-family: 'Tangerine', cursive;
   margin: 0;
+  font-weight: bold;
+  color: #f0f0f0;
 }
 
 .dark .navigation {
@@ -177,7 +189,8 @@ h2 {
 }
 
 .dark .navigation:hover {
-  transform: scale(1.1);    
+  transform: scale(1.1);  
+  transition: 1s;    
   cursor: pointer;     
   text-shadow: 0 0 10px #66a3f8, 0 0 40px #478ffb;   
 }
@@ -188,7 +201,7 @@ h2 {
   max-width: 250px;
   height: auto;
   background-color: #3b3a3a6e;
-  box-shadow: 0 0 20px rgb(131, 169, 226);
+  box-shadow: 0 0 13px rgb(131, 169, 226);
   border: 2px solid #0000004f;
   color: #f0f0f0;
   border-radius: 8px;
